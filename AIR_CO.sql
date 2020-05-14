@@ -1,0 +1,36 @@
+/*Creating Database in SQLITE
+from the command line>sqlite3 AIR_CO.db
+*/
+
+/*Creating Database in MySQL/MariaDB
+CREATE DATABASE AIR_CO; 
+USE AIR_CO;
+*/
+
+/*Create Table
+Use AUTOINCREMENT for sqlite3
+Use AUTO_INCREMENT for MySQL
+*/
+
+CREATE TABLE EMPLOYEE (
+EMP_NUM INTEGER PRIMARY KEY AUTOINCREMENT,
+EMP_LNAME VARCHAR(15) NOT NULL,
+EMP_FNAME VARCHAR(50) NOT NULL,
+EMP_INITIAL CHAR(1),
+EMP_LICENSE CHAR(5),
+EMP_RATINGS VARCHAR(25),
+EMP_MED_TYPE CHAR(1),
+EMP_HIRE_DATE DATE  NOT NULL
+);
+
+INSERT INTO EMPLOYEE VALUES('100','Kolmycz','Xavier','T','','','','3/15/1988');
+INSERT INTO EMPLOYEE VALUES('101','Lewis','Marcos','','ATP','SEL/MEL/Instr/CFII','1','4/25/1989');
+INSERT INTO EMPLOYEE VALUES('102','Vandam','Jean','','','','','12/20/1993');
+INSERT INTO EMPLOYEE VALUES('103','Jones','Victoria','R','','','','8/28/2003');
+INSERT INTO EMPLOYEE VALUES('104','Lange','Edith','','ATP','SEL/MEL/Instr','1','10/20/1997');
+INSERT INTO EMPLOYEE VALUES('105','Williams','Gabriel','U','COM','SEL/MEL/Instr/CFI','2','11/8/1997');
+INSERT INTO EMPLOYEE VALUES('106','Duzak','Mario','','COM','SEL/MEL/Instr','2','1/5/2004');
+INSERT INTO EMPLOYEE VALUES('107','Diante','Venite','L','','','','7/2/1997');
+INSERT INTO EMPLOYEE VALUES('108','Wiesenbach','Joni','','','','','11/18/1995');
+INSERT INTO EMPLOYEE VALUES('109','Travis','Brett','T','COM','SEL/MEL/SES/Instr/CFII','1','4/14/2001');
+INSERT INTO EMPLOYEE VALUES('110','Genkazi','Stan','','','','','12/1/2003');
